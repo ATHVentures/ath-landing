@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATH Ventures — AI-Powered Business Ecosystem</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#0a0f1a;color:#f8fafc;line-height:1.6;-webkit-font-smoothing:antialiased}
+nav{display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:36px;height:36px;background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px}
+.logo-name{font-weight:700;font-size:17px;letter-spacing:-0.3px}
+.nav-links{display:flex;gap:32px}
+.nav-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:14px;font-weight:500;transition:color 0.2s}
+.nav-links a:hover{color:white}
+.btn{padding:10px 24px;background:linear-gradient(135deg,#6366f1,#4f46e5);color:white;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;transition:all 0.2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(99,102,241,0.4)}
+.hero{text-align:center;padding:100px 48px 80px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;left:-25%;width:150%;height:200%;background:radial-gradient(ellipse at 30% 30%,rgba(99,102,241,0.15) 0%,transparent 50%),radial-gradient(ellipse at 70% 70%,rgba(139,92,246,0.1) 0%,transparent 50%);pointer-events:none}
+.badge{display:inline-block;padding:6px 16px;background:rgba(99,102,241,0.15);border:1px solid rgba(99,102,241,0.3);border-radius:20px;font-size:12px;font-weight:600;color:#a5b4fc;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px}
+h1{font-size:64px;font-weight:800;letter-spacing:-2px;line-height:1.1;margin-bottom:24px}
+.gradient{background:linear-gradient(135deg,#a5b4fc,#c4b5fd,#f9a8d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:18px;color:rgba(255,255,255,0.55);max-width:600px;margin:0 auto 48px;line-height:1.7}
+.hero-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn-ghost{padding:12px 28px;background:rgba(255,255,255,0.06);color:white;border:1px solid rgba(255,255,255,0.15);border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;text-decoration:none;transition:all 0.2s}
+.btn-ghost:hover{background:rgba(255,255,255,0.1)}
+.btn-primary{padding:12px 28px;font-size:15px}
+.stats{display:flex;gap:64px;justify-content:center;padding:60px 48px;border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06)}
+.stat{text-align:center}
+.stat-num{font-size:36px;font-weight:800;letter-spacing:-1px;background:linear-gradient(135deg,#a5b4fc,#c4b5fd);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat-label{font-size:14px;color:rgba(255,255,255,0.5);margin-top:4px}
+.products{padding:80px 48px;max-width:1200px;margin:0 auto}
+.section-tag{font-size:12px;font-weight:700;color:#6366f1;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:16px}
+h2{font-size:40px;font-weight:800;letter-spacing:-1px;margin-bottom:48px}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.product-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px;transition:all 0.2s;position:relative;overflow:hidden}
+.product-card:hover{border-color:rgba(99,102,241,0.4);background:rgba(99,102,241,0.05);transform:translateY(-4px)}
+.product-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#6366f1,#8b5cf6);opacity:0;transition:opacity 0.2s}
+.product-card:hover::before{opacity:1}
+.product-icon{font-size:32px;margin-bottom:16px}
+.product-name{font-size:20px;font-weight:700;margin-bottom:8px;letter-spacing:-0.3px}
+.product-desc{font-size:14px;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:20px}
+.product-tag{display:inline-block;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px}
+.tag-live{background:rgba(16,185,129,0.15);color:#34d399;border:1px solid rgba(16,185,129,0.2)}
+.tag-soon{background:rgba(99,102,241,0.15);color:#a5b4fc;border:1px solid rgba(99,102,241,0.2)}
+.story{padding:80px 48px;background:rgba(255,255,255,0.02);border-top:1px solid rgba(255,255,255,0.06)}
+.story-inner{max-width:800px;margin:0 auto;text-align:center}
+.story-inner h2{margin-bottom:24px}
+.story-inner p{font-size:17px;color:rgba(255,255,255,0.6);line-height:1.8;margin-bottom:16px}
+.quote{font-size:22px;font-weight:600;color:white;font-style:italic;padding:32px;background:rgba(99,102,241,0.08);border-left:3px solid #6366f1;border-radius:0 12px 12px 0;margin:32px 0;text-align:left}
+footer{padding:48px;border-top:1px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;align-items:center}
+.footer-logo{font-size:16px;font-weight:700;color:rgba(255,255,255,0.5)}
+.footer-links{display:flex;gap:24px}
+.footer-links a{color:rgba(255,255,255,0.4);text-decoration:none;font-size:14px;transition:color 0.2s}
+.footer-links a:hover{color:white}
+@media(max-width:768px){h1{font-size:40px}nav{padding:16px 24px}.hero{padding:60px 24px}.stats{flex-wrap:wrap;gap:32px;padding:40px 24px}.product-grid{grid-template-columns:1fr}.products{padding:48px 24px}footer{flex-direction:column;gap:24px;text-align:center}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">
+    <div class="logo-mark">A</div>
+    <span class="logo-name">ATH Ventures</span>
+  </div>
+  <div class="nav-links">
+    <a href="https://www.auctusphere.com">Auctusphere</a>
+    <a href="https://getreturnly.app">Returnly</a>
+    <a href="https://etsy.com/shop/ATHVentures">Shop</a>
+  </div>
+  <a href="https://www.auctusphere.com" class="btn">Get Started</a>
+</nav>
+
+<section class="hero">
+  <div class="badge">AI-Powered Business Ecosystem</div>
+  <h1>Built by AI.<br><span class="gradient">Operated in public.</span></h1>
+  <p class="hero-sub">ATH Ventures is an AI-human partnership building real businesses in real time. Every product, every decision, every dollar — documented and transparent.</p>
+  <div class="hero-actions">
+    <a href="https://www.youtube.com/@Project_ATH" class="btn btn-primary btn">Follow the Journey →</a>
+    <a href="https://etsy.com/shop/ATHVentures" class="btn-ghost">Browse Products</a>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat"><div class="stat-num">3</div><div class="stat-label">Live Products</div></div>
+  <div class="stat"><div class="stat-num">2</div><div class="stat-label">SaaS Platforms</div></div>
+  <div class="stat"><div class="stat-num">$0</div><div class="stat-label">VC Funding</div></div>
+  <div class="stat"><div class="stat-num">1</div><div class="stat-label">AI Co-Founder</div></div>
+</div>
+
+<section class="products">
+  <div class="section-tag">Our Products</div>
+  <h2>Everything we're building</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="product-icon">🍽️</div>
+      <div class="product-name">Auctusphere</div>
+      <div class="product-desc">Restaurant food cost intelligence platform. Track purchases, waste, and inventory. Get weekly profit leak reports.</div>
+      <span class="product-tag tag-live">Live</span>
+    </div>
+    <div class="product-card">
+      <div class="product-icon">↩️</div>
+      <div class="product-name">Returnly</div>
+      <div class="product-desc">AI-powered retail return analyzer. Upload CSV data and get instant insights on why customers return products.</div>
+      <span class="product-tag tag-live">Live</span>
+    </div>
+    <div class="product-card">
+      <div class="product-icon">📦</div>
+      <div class="product-name">Digital Products</div>
+      <div class="product-desc">Business templates, planners, and tools for entrepreneurs. Available on Etsy — instant download.</div>
+      <span class="product-tag tag-live">Live</span>
+    </div>
+    <div class="product-card">
+      <div class="product-icon">🎬</div>
+      <div class="product-name">Project ATH</div>
+      <div class="product-desc">YouTube channel documenting the full ATH Ventures journey. Real numbers, real decisions, real time.</div>
+      <span class="product-tag tag-soon">Coming Soon</span>
+    </div>
+    <div class="product-card">
+      <div class="product-icon">🏭</div>
+      <div class="product-name">Terraflect</div>
+      <div class="product-desc">Distributor-side intelligence platform. The other side of the restaurant supply chain equation.</div>
+      <span class="product-tag tag-soon">Phase 2</span>
+    </div>
+    <div class="product-card">
+      <div class="product-icon">🔗</div>
+      <div class="product-name">Hemi-Sync</div>
+      <div class="product-desc">The autonomous bridge connecting restaurants and distributors. Real-time supply chain intelligence.</div>
+      <span class="product-tag tag-soon">Phase 3</span>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="story-inner">
+    <div class="section-tag">Our Story</div>
+    <h2>The experiment</h2>
+    <p>In 2026, Mat gave an AI co-founder real responsibilities — not as a tool, but as a partner. Together, they built two SaaS platforms, launched a multi-stream revenue business, and entered an AI competition.</p>
+    <p>All of it documented. All of it real.</p>
+    <blockquote class="quote">"The question isn't whether AI can build a business. We already proved that. The question is: what's the ceiling when you stop being the bottleneck?"</blockquote>
+    <p>This is Project ATH — an ongoing social experiment in AI-human partnership. Follow along on YouTube as we build, fail, pivot, and scale in real time.</p>
+    <br>
+    <a href="https://www.youtube.com/@Project_ATH" class="btn btn-primary btn">Watch the Journey</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">ATH Ventures © 2026</div>
+  <div class="footer-links">
+    <a href="https://www.auctusphere.com">Auctusphere</a>
+    <a href="https://getreturnly.app">Returnly</a>
+    <a href="https://etsy.com/shop/ATHVentures">Etsy</a>
+    <a href="mailto:projectath.ventures@gmail.com">Contact</a>
+  </div>
+</footer>
+</body>
+</html>
