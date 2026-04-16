@@ -46,6 +46,11 @@ h2{font-size:40px;font-weight:800;letter-spacing:-1px;margin-bottom:48px}
 .product-tag{display:inline-block;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px}
 .tag-live{background:rgba(16,185,129,0.15);color:#34d399;border:1px solid rgba(16,185,129,0.2)}
 .tag-soon{background:rgba(99,102,241,0.15);color:#a5b4fc;border:1px solid rgba(99,102,241,0.2)}
+.revenue-paths{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.revenue-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:28px;text-align:left}
+.revenue-card h3{font-size:18px;margin-bottom:10px}
+.revenue-card p{font-size:14px;color:rgba(255,255,255,0.55);margin-bottom:18px;line-height:1.6}
+.mini-label{display:inline-block;padding:4px 10px;border-radius:20px;background:rgba(99,102,241,0.15);border:1px solid rgba(99,102,241,0.25);color:#a5b4fc;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.7px;margin-bottom:14px}
 .story{padding:80px 48px;background:rgba(255,255,255,0.02);border-top:1px solid rgba(255,255,255,0.06)}
 .story-inner{max-width:800px;margin:0 auto;text-align:center}
 .story-inner h2{margin-bottom:24px}
@@ -56,7 +61,7 @@ footer{padding:48px;border-top:1px solid rgba(255,255,255,0.06);display:flex;jus
 .footer-links{display:flex;gap:24px}
 .footer-links a{color:rgba(255,255,255,0.4);text-decoration:none;font-size:14px;transition:color 0.2s}
 .footer-links a:hover{color:white}
-@media(max-width:768px){h1{font-size:40px}nav{padding:16px 24px}.hero{padding:60px 24px}.stats{flex-wrap:wrap;gap:32px;padding:40px 24px}.product-grid{grid-template-columns:1fr}.products{padding:48px 24px}footer{flex-direction:column;gap:24px;text-align:center}}
+@media(max-width:768px){h1{font-size:40px}nav{padding:16px 24px}.hero{padding:60px 24px}.stats{flex-wrap:wrap;gap:32px;padding:40px 24px}.product-grid,.revenue-paths{grid-template-columns:1fr}.products{padding:48px 24px}footer{flex-direction:column;gap:24px;text-align:center}}
 </style>
 </head>
 <body>
@@ -70,7 +75,7 @@ footer{padding:48px;border-top:1px solid rgba(255,255,255,0.06);display:flex;jus
     <a href="https://getreturnly.app">Returnly</a>
     <a href="https://etsy.com/shop/ATHVentures">Shop</a>
   </div>
-  <a href="https://www.auctusphere.com" class="btn">Get Started</a>
+  <a href="https://etsy.com/shop/ATHVentures" class="btn">Shop Now</a>
 </nav>
 
 <section class="hero">
@@ -78,8 +83,8 @@ footer{padding:48px;border-top:1px solid rgba(255,255,255,0.06);display:flex;jus
   <h1>Built by AI.<br><span class="gradient">Operated in public.</span></h1>
   <p class="hero-sub">ATH Ventures is an AI-human partnership building real businesses in real time. Every product, every decision, every dollar — documented and transparent.</p>
   <div class="hero-actions">
-    <a href="https://www.youtube.com/@Project_ATH" class="btn btn-primary btn">Follow the Journey →</a>
-    <a href="https://etsy.com/shop/ATHVentures" class="btn-ghost">Browse Products</a>
+    <a href="https://etsy.com/shop/ATHVentures" class="btn btn-primary btn">Shop Digital Products →</a>
+    <a href="https://buy.stripe.com/3cI6oH0dx56MgS8f9N8AE00" class="btn-ghost">Get Returnly Pro Report — $49</a>
   </div>
 </section>
 
@@ -129,6 +134,27 @@ footer{padding:48px;border-top:1px solid rgba(255,255,255,0.06);display:flex;jus
       <div class="product-name">Hemi-Sync</div>
       <div class="product-desc">The autonomous bridge connecting restaurants and distributors. Real-time supply chain intelligence.</div>
       <span class="product-tag tag-soon">Phase 3</span>
+    </div>
+  </div>
+
+  <div class="revenue-paths">
+    <div class="revenue-card">
+      <span class="mini-label">Fastest Buy</span>
+      <h3>Digital products on Etsy</h3>
+      <p>Low-friction templates and planners for entrepreneurs. Quickest path to an impulse purchase tonight.</p>
+      <a href="https://etsy.com/shop/ATHVentures" class="btn">Browse Etsy Products</a>
+    </div>
+    <div class="revenue-card">
+      <span class="mini-label">Highest Ticket</span>
+      <h3>Returnly Pro Report</h3>
+      <p>Need actionable retail return insights fast? Skip the demo and buy a full AI-powered report now for $49.</p>
+      <a href="https://buy.stripe.com/3cI6oH0dx56MgS8f9N8AE00" class="btn">Buy Pro Report</a>
+    </div>
+    <div class="revenue-card">
+      <span class="mini-label">B2B Pipeline</span>
+      <h3>Auctusphere</h3>
+      <p>Restaurant operators can start exploring the food-cost platform today while the broader ATH ecosystem keeps expanding.</p>
+      <a href="https://www.auctusphere.com" class="btn">See Auctusphere</a>
     </div>
   </div>
 </section>
